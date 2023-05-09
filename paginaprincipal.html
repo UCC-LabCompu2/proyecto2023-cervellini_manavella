@@ -8,12 +8,87 @@
     <meta content="fisica, mru, encuentro" name="palabras-principales">
     <link rel="stylesheet" href="miEstilo.css" type="text/css">
     <style>
-        body{
+
+        body {
             text-align: center;
+            font-family: 'Calibri', cursive;
+            background: linear-gradient(to right, #8ab78b, #a5ecae, #8ab78b);
         }
     </style>
+
 </head>
+
 <body>
+
+<header>
+    <div class="cuadrado">
+        <h2 style="font-size: 30px; font-family: 'Corbel Light';color: #f5f1f1">C O M P L E T A R</h2>
+    </div>
+</header>
+
+<form>
+
+    <p class="velocidad_11">
+        <label for="input_velocidad1">Velocidad:</label>
+        <input type="text" class="form-control" id="input_velocidad1" aria-describedby="velocidad" placeholder="Ingrese la velocidad">
+        <label class="my-1 mr-2" for="input_unidad1"></label>
+        <select class="form-control" id="input_unidad1">
+            <option>km/h</option>
+            <option>m/s</option>
+        </select>
+    </p>
+
+    <p class="posicion_11">
+        <label for="input_posicion1">Posición:</label>
+        <input type="text" class="form-control" id="input_posicion1" aria-describedby="posición" placeholder="Ingrese la posición">
+        <label class="my-1 mr-2" for="input_unidad1"></label>
+        <select class="form-control" id="input_unipri">
+            <option>km</option>
+            <option>m</option>
+            <option>cm</option>
+        </select>
+    </p>
+
+    <p class="velocidad_22">
+        <label for="input_velocidad2">Velocidad:</label>
+        <input type="text" class="form-control" id="input_velocidad2" aria-describedby="velocidad" placeholder="Ingrese la velocidad">
+        <label class="my-1 mr-2" for="input_unidad1"></label>
+        <select class="form-control" id="input_unidadseg">
+            <option>km/h</option>
+            <option>m/s</option>
+        </select>
+    </p>
+
+
+    <p class="posicion_22">
+        <label for="input_posicion2">Posición:</label>
+        <input type="text" class="form-control" id="input_posicion2" aria-describedby="posición" placeholder="Ingrese la posición">
+        <label class="my-1 mr-2" for="input_unidad1"></label>
+        <select class="form-control" id="input_uniseg">
+            <option>km</option>
+            <option>m</option>
+            <option>cm</option>
+        </select>
+    </p>
+
+</form>
+
+<section>
+    <div class="cuadrado">
+        <h2 style="font-size: 30px; font-family: 'Corbel Light';color: #f5f1f1">C O M P L E T A R</h2>
+    </div>
+</section>
+
+<form>
+    ACTUALIZAR
+    <input type="text" class="form-control" id="input_posicion2" aria-describedby="posición" placeholder="Ingrese la posición" disabled>
+
+</form>
+
+<canvas>
+    Tu navegador no soporta canvas
+</canvas>
+
 
 </body>
 </html>
