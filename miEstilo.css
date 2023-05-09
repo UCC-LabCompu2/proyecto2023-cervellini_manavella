@@ -1,11 +1,55 @@
-h1{
-    color: #086c91;
+header {
+    font-size: 40px;
+    font-family: "Bodoni MT Condensed";
+    color: black;
 }
 
-header, section{
+body {
+    background: linear-gradient(to right, #8ab78b, #a5ecae, #8ab78b);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Calisto MT", cursive;
+}
+
+h4 {
+    font-size: 25px;
+    font-family: 'Instrument Serif', serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    color: black;
+}
+
+h5 {
+    font-size: 30px;
+    font-family: "Dubai Light";
+    color: #545454;
+    float: right;
+}
+
+#formulas_mru {
+    width: 60%;
+}
+
+section {
     width: 30%;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+a:link, a:visited {
+    font-family: 'Cambria';
+    color: #00a90e;
+}
+
+a:hover {
+    font-size: 1.4em;
+}
+
+a:active {
+    font-weight: bold;
 }
 
 .btn-1 {
@@ -16,19 +60,36 @@ header, section{
     float: right;
 }
 
-.cuadrado{
-
+.cuadrado {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Corbel Light";
+    color: #f5f1f1;
     display: block;
     background-color: rgb(66, 94, 70);
     padding: 9px 1px;
     border: 2px;
 }
 
-form{
+form {
     column-count: 2;
 }
 
-canvas{
+.distancia, .tiempo {
+    align-content: center;
+    border: 2px;
+
+}
+
+.return_button {
+    display: inline-block;
+    background-color: chartreuse;
+    padding: 30px 30px;
+    border-radius: 70%;
+    float: left;
+}
+
+canvas {
     border: 1px solid black;
     width: 300px;
     height: 200px;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Fisica</title>
@@ -7,30 +7,25 @@
     <meta content="web de Fisica MRU" name="descripcion">
     <meta content="fisica, mru, encuentro" name="palabras-principales">
     <link rel="stylesheet" href="miEstilo.css" type="text/css">
-    <style>
+    <link rel="shortcut icon" href="imagenes/favicon.png">
 
-        body {
-            text-align: center;
-            font-family: 'Calibri', cursive;
-            background: linear-gradient(to right, #8ab78b, #a5ecae, #8ab78b);
-        }
-    </style>
 
 </head>
 
 <body>
 
-<header>
+<section>
     <div class="cuadrado">
-        <h2 style="font-size: 30px; font-family: 'Corbel Light';color: #f5f1f1">C O M P L E T A R</h2>
+        <h2>C O M P L E T A R</h2>
     </div>
-</header>
+</section>
 
 <form>
 
     <p class="velocidad_11">
         <label for="input_velocidad1">Velocidad:</label>
-        <input type="text" class="form-control" id="input_velocidad1" aria-describedby="velocidad" placeholder="Ingrese la velocidad">
+        <input type="text" class="form-control" id="input_velocidad1" aria-describedby="velocidad"
+               placeholder="Ingrese la velocidad">
         <label class="my-1 mr-2" for="input_unidad1"></label>
         <select class="form-control" id="input_unidad1">
             <option>km/h</option>
@@ -40,7 +35,8 @@
 
     <p class="posicion_11">
         <label for="input_posicion1">Posición:</label>
-        <input type="text" class="form-control" id="input_posicion1" aria-describedby="posición" placeholder="Ingrese la posición">
+        <input type="text" class="form-control" id="input_posicion1" aria-describedby="posición"
+               placeholder="Ingrese la posición">
         <label class="my-1 mr-2" for="input_unidad1"></label>
         <select class="form-control" id="input_unipri">
             <option>km</option>
@@ -51,7 +47,8 @@
 
     <p class="velocidad_22">
         <label for="input_velocidad2">Velocidad:</label>
-        <input type="text" class="form-control" id="input_velocidad2" aria-describedby="velocidad" placeholder="Ingrese la velocidad">
+        <input type="text" class="form-control" id="input_velocidad2" aria-describedby="velocidad"
+               placeholder="Ingrese la velocidad">
         <label class="my-1 mr-2" for="input_unidad1"></label>
         <select class="form-control" id="input_unidadseg">
             <option>km/h</option>
@@ -62,7 +59,8 @@
 
     <p class="posicion_22">
         <label for="input_posicion2">Posición:</label>
-        <input type="text" class="form-control" id="input_posicion2" aria-describedby="posición" placeholder="Ingrese la posición">
+        <input type="text" class="form-control" id="input_posicion2" aria-describedby="posición"
+               placeholder="Ingrese la posición">
         <label class="my-1 mr-2" for="input_unidad1"></label>
         <select class="form-control" id="input_uniseg">
             <option>km</option>
@@ -75,20 +73,36 @@
 
 <section>
     <div class="cuadrado">
-        <h2 style="font-size: 30px; font-family: 'Corbel Light';color: #f5f1f1">C O M P L E T A R</h2>
+        <h2>R E S U L T A D O S</h2>
     </div>
 </section>
 
-<form>
-    ACTUALIZAR
-    <input type="text" class="form-control" id="input_posicion2" aria-describedby="posición" placeholder="Ingrese la posición" disabled>
+<section>
+    <div class="tiempo">
+        Tiempo al momento del encuentro
+        <input type="text" aria-describedby="resultado" disabled>
+    </div>
+</section>
 
-</form>
+<section>
+    <div class="distancia">
+        Distancia al momento del encuentro
+        <input type="text" aria-describedby="resultado" disabled>
+    </div>
+
+</section>
+
+<nav>
+    <a href="index.html" class="return_button" type="submit">A T R Á S</a>
+</nav>
 
 <canvas>
     Tu navegador no soporta canvas
 </canvas>
 
+<footer>
+    <h5>Valentina Cervellini - Pilar Manavella</h5>
+</footer>
 
 </body>
 </html>
