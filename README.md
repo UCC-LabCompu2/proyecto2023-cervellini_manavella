@@ -6,7 +6,7 @@ Valentina Cervellini y Pilar Manavella
 * HTML5
 * CSS3
 
-Link al sitio: [Proyecto grupal Física Encuentro](http://localhost:63342/proyecto2023-cervellini_manavella/index.html?_ijt=735k866vii5059e68vnkj4rlmv&_ij_reload=RELOAD_ON_SAVE)
+Link al sitio: [Proyecto grupal Física Encuentro](https://github.com/UCC-LabCompu2/proyecto2023-cervellini_manavella/)
 
 ## Requisitos del Primer Parcial
 
