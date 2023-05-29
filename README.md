@@ -1,5 +1,5 @@
-# Fisica Encuentro
-Esta página corresponde al cálculo de encuentro de MRU sobre Fisica I.
+# Física Encuentro
+Esta página corresponde al cálculo de encuentro de MRU sobre Física I.
 ## Autores
 Valentina Cervellini y Pilar Manavella
 ## Tecnologías Usadas
