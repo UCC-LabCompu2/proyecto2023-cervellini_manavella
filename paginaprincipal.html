@@ -8,6 +8,7 @@
     <meta content="fisica, mru, encuentro" name="palabras-principales">
     <link rel="stylesheet" href="miEstilo.css" type="text/css">
     <link rel="shortcut icon" href="imagenes/favicon.png">
+    <script type="text/javascript" src="funcionesProyecto.js"></script>
 
 
 </head>
@@ -20,12 +21,12 @@
     </div>
 </section>
 
-<form>
+<form name="lasUnidades">
 
     <p class="velocidad_11">
         <label for="input_velocidad1">Velocidad:</label>
         <input type="text" class="form-control" id="input_velocidad1" aria-describedby="velocidad"
-               placeholder="Ingrese la velocidad">
+               placeholder="Ingrese la velocidad" onchange="calculoEncuentro(this.id, this.value)">
         <label class="my-1 mr-2" for="input_unidad1"></label>
         <select class="form-control" id="input_unidad1">
             <option>km/h</option>
@@ -36,7 +37,7 @@
     <p class="posicion_11">
         <label for="input_posicion1">Posición:</label>
         <input type="text" class="form-control" id="input_posicion1" aria-describedby="posición"
-               placeholder="Ingrese la posición">
+               placeholder="Ingrese la posición" onchange="calculoEncuentro(this.id, this.value)">
         <select class="form-control" id="input_unipri">
             <option>km</option>
             <option>m</option>
@@ -48,7 +49,7 @@
     <p class="velocidad_22">
         <label for="input_velocidad2">Velocidad:</label>
         <input type="text" class="form-control" id="input_velocidad2" aria-describedby="velocidad"
-               placeholder="Ingrese la velocidad">
+               placeholder="Ingrese la velocidad" onchange="calculoEncuentro(this.id, this.value)">
         <select class="form-control" id="input_unidadseg">
             <option>km/h</option>
             <option>m/s</option>
@@ -60,7 +61,7 @@
     <p class="posicion_22">
         <label for="input_posicion2">Posición:</label>
         <input type="text" class="form-control" id="input_posicion2" aria-describedby="posición"
-               placeholder="Ingrese la posición">
+               placeholder="Ingrese la posición" onchange="calculoEncuentro(this.id, this.value)">
         <select class="form-control" id="input_uniseg">
             <option>km</option>
             <option>m</option>
