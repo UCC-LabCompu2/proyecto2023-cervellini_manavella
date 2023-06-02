@@ -1,37 +1,49 @@
 /**
  * Cálculo de encuentro, respecto distancia y tiempo .
- * @method nombre de la funcion
- * @param {string} id - El id de los inputs de velocidad y posición.
- * @param {number} valor - El valor de los inputs de velocidad y posición.
+ * @method calculoEncuentro
  * @return
  */
+function calculoEncuentro() {
+    let v1 = document.lasUnidades.input_velocidad1.value;
+    let u1 = document.lasUnidades.input_unidad1.value;
+    let p1 = document.lasUnidades.input_posicion1.value;
+    let u1s = document.lasUnidades.input_unipri.value;
+    let v2 = document.lasUnidades.input_velocidad2.value;
+    let u2 = document.lasUnidades.input_unidadseg.value;
+    let p2 = document.lasUnidades.input_posicion2.value;
+    let u2s = document.lasUnidades.input_uniseg.value;
 
+    //Cambiar la coma
+    if (v1.includes(",")) {
+        v1 = v1.replace(",", ".");
+    }...
 
-function conversionUnidades(id, valor) {
-    if (unidad == "m") {
-        valor = valor;
-    } else if (unidad == "km") {
-        valor = valor * 0.001;
-    } else if (unidad == "cm") {
-        valor = valor * 100;
-    } else if (unidad == "km/h") {
-        valor = valor * 0.27778;
-    } else if (unidad == "m/s") {
-        valor = valor;
+    //Verificar is Nan
+    if(isNaN(v1)){
+        alert("La velocidad 1 debe ser un número");
+        v1 = 0;
     }
-}
+    if(){
 
-function calculoEncuentro(id, valor) {
-
-    console.log("haz hecho click");
-    var boton = document.getElementById("botoncalcular");
-    boton.addEventListener("click", calculoEncuentro);
+    }...
 
 
-    if (valor.includes(",")) {
-        valor = valor.replace(",", ".");
+    //Conversion de unidades
+    if(u1==="kmh"){
+        v1 = v1 * 100;
+    }
+    if(){
+
     }
 
+    //calculo
+
+
+    //asigno
+
+
+    console.log(v1, u1,p1,u1s,v2,u2,p2,u2s);
+    /*
     // cartel alert si el valor ingresado no es válido
     if (isNaN(valor)) {
         alert("Se ingresó un valor inválido");
@@ -42,6 +54,10 @@ function calculoEncuentro(id, valor) {
         document.lasUnidades.input_posicion2.value = "";
     } else {
         conversionUnidades();
+    }
+
+    if (valor.includes(",")) {
+        valor = valor.replace(",", ".");
     }
 
     var unidadPos1 = parseFloat(document.getElementById("input_unipri"));
@@ -76,6 +92,6 @@ function calculoEncuentro(id, valor) {
     // mostrar resultados
     document.getElementById("resul_tiempo").value = tiempo + "  s";
     document.getElementById("resul_distancia").value = distancia + "  m";
-
+*/
 
 }

@@ -26,22 +26,22 @@
     <p class="velocidad_11">
         <label for="input_velocidad1">Velocidad:</label>
         <input type="text" class="form-control" id="input_velocidad1" aria-describedby="velocidad"
-               placeholder="Ingrese la velocidad" onchange="calculoEncuentro(this.id, this.value)">
+               placeholder="Ingrese la velocidad">
         <label class="my-1 mr-2" for="input_unidad1"></label>
         <select class="form-control" id="input_unidad1">
-            <option>km/h</option>
-            <option>m/s</option>
+            <option value="kmh">km/h</option>
+            <option value="ms">m/s</option>
         </select>
     </p>
 
     <p class="posicion_11">
         <label for="input_posicion1">Posición:</label>
         <input type="text" class="form-control" id="input_posicion1" aria-describedby="posición"
-               placeholder="Ingrese la posición" onchange="calculoEncuentro(this.id, this.value)">
+               placeholder="Ingrese la posición">
         <select class="form-control" id="input_unipri">
-            <option>km</option>
-            <option>m</option>
-            <option>cm</option>
+            <option value="km">km</option>
+            <option value="m">m</option>
+            <option value="cm">cm</option>
         </select>
         <label for="input_unipri"></label>
     </p>
@@ -49,10 +49,10 @@
     <p class="velocidad_22">
         <label for="input_velocidad2">Velocidad:</label>
         <input type="text" class="form-control" id="input_velocidad2" aria-describedby="velocidad"
-               placeholder="Ingrese la velocidad" onchange="calculoEncuentro(this.id, this.value)">
+               placeholder="Ingrese la velocidad">
         <select class="form-control" id="input_unidadseg">
-            <option>km/h</option>
-            <option>m/s</option>
+            <option value="kmh">km/h</option>
+            <option value="ms">m/s</option>
         </select>
         <label for="input_unidadseg"></label>
     </p>
@@ -61,20 +61,21 @@
     <p class="posicion_22">
         <label for="input_posicion2">Posición:</label>
         <input type="text" class="form-control" id="input_posicion2" aria-describedby="posición"
-               placeholder="Ingrese la posición" onchange="calculoEncuentro(this.id, this.value)">
+               placeholder="Ingrese la posición">
         <select class="form-control" id="input_uniseg">
-            <option>km</option>
-            <option>m</option>
-            <option>cm</option>
+            <option value="km">km</option>
+            <option value="m">m</option>
+            <option value="cm">cm</option>
         </select>
         <label for="input_uniseg"></label>
     </p>
 
+    <nav>
+        <button type="button" onclick="calculoEncuentro()" class="do_button" id="botoncalcular">C A L C U L A R</button>
+    </nav>
 </form>
 
-<nav>
-    <button type="button" onclick="calculoEncuentro();conversionUnidades()" class="do_button" id="botoncalcular">C A L C U L A R</button>
-</nav>
+
 
 <section>
     <div class="cuadrado">
