@@ -73,7 +73,7 @@
 </form>
 
 <nav>
-    <a onclick="calculoEncuentro();" class="do_button" id="botoncalcular" type="submit">C A L C U L A R</a>
+    <button type="button" onclick="calculoEncuentro();conversionUnidades()" class="do_button" id="botoncalcular">C A L C U L A R</button>
 </nav>
 
 <section>
@@ -85,7 +85,7 @@
 <section>
     <div class="tiempo">
         Tiempo al momento del encuentro
-        <input type="text" id="resul_tiempo" aria-describedby="resultado" disabled>
+        <input type="text" id="resul_tiempo" aria-describedby="resultado" onchange="calculoEncuentro();" disabled>
         <label for="resul_tiempo"></label>
     </div>
 </section>
@@ -93,7 +93,7 @@
 <section>
     <div class="distancia">
         Distancia al momento del encuentro
-        <input type="text" id="resul_distancia" aria-describedby="resultado" disabled>
+        <input type="text" id="resul_distancia" aria-describedby="resultado" onchange="calculoEncuentro();" disabled>
         <label for="resul_distancia"></label>
     </div>
 </section>

@@ -56,25 +56,26 @@ function calculoEncuentro(id, valor) {
 
     // conversión de unidades para aquellas distintas a m o m/s
     if (input_unidad1 != "m/s") {
-        velocidad1 = convertirUnidades(velocidad1, input_unidad1);
+        velocidad_11 = convertirUnidades(velocidad1, input_unidad1);
     }
     if (input_unipri != "m") {
-        posicion1 = convertirUnidades(posicion1, input_unipri);
+        posicion_11 = convertirUnidades(posicion1, input_unipri);
     }
     if (input_unidadseg != "m/s") {
-        velocidad2 = convertirUnidades(velocidad2, input_unidadseg);
+        velocidad_22 = convertirUnidades(velocidad2, input_unidadseg);
     }
     if (input_uniseg != "m") {
-        posicion2 = convertirUnidades(posicion2, input_uniseg);
+        posicion_22 = convertirUnidades(posicion2, input_uniseg);
     }
 
     var tiempo;
-    tiempo = (posicion1 - posicion2) / (velocidad2 - velocidad1);
+    tiempo = (posicion_11 - posicion_22) / (velocidad_22 - velocidad_11);
     tiempo = tiempo * 3600;
-    distancia = posicion1 + velocidad1 * Number(tiempo);
+    distancia = posicion_11 + velocidad_11 * Number(tiempo);
 
     // mostrar resultados
-    document.getElementById("resultado").value = tiempo + "  s";
-    document.getElementById("resultado").value = distancia + "  m";
+    document.getElementById("resul_tiempo").value = tiempo + "  s";
+    document.getElementById("resul_distancia").value = distancia + "  m";
+
 
 }
