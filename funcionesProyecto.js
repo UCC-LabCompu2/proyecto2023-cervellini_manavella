@@ -18,7 +18,7 @@ function calculoEncuentro() {
         v1 = v1.replace(",", ".");
     }
     if (v2.includes(",")) {
-        v2 = v2.replace("," , ".");
+        v2 = v2.replace(",", ".");
     }
     if (p1.includes(",")) {
         p1 = p1.replace(",", ".");
@@ -28,41 +28,41 @@ function calculoEncuentro() {
     }
 
     //Verificación de los datos ingresados en cada campo
-    if(isNaN(v1)){
+    if (isNaN(v1)) {
         alert("La velocidad 1 debe ser un número");
-        document.lasUnidades.input_velocidad1.value = "" ;
+        document.lasUnidades.input_velocidad1.value = "";
     }
-    if(isNaN(v2)){
+    if (isNaN(v2)) {
         alert("La velocidad 2 debe ser un número");
-        document.lasUnidades.input_velocidad2.value = "" ;
+        document.lasUnidades.input_velocidad2.value = "";
     }
-    if(isNaN(p1)){
+    if (isNaN(p1)) {
         alert("La posición 1 debe ser un número");
-        document.lasUnidades.input_posicion1.value = "" ;
+        document.lasUnidades.input_posicion1.value = "";
     }
-    if(isNaN(p2)){
+    if (isNaN(p2)) {
         alert("La posición 2 debe ser un número");
-        document.lasUnidades.input_posicion2.value = "" ;
+        document.lasUnidades.input_posicion2.value = "";
     }
 
     //Conversion de unidades
-    if(u1==="kmh"){
-        v1 = v1 * 100;
+    if (u1 === "kmh") {
+        v1 = v1 / 3.6;
     }
-    if(u2==="kmh"){
-        v2 = v2 *100;
+    if (u2 === "kmh") {
+        v2 = v2 / 3.6;
     }
-    if(u1s==="km"){
-        p1 = p1*100;
+    if (u1s === "km") {
+        p1 = p1 * 1000;
     }
-    if(u2s==="km"){
-        p2 = p2*100;
+    if (u2s === "km") {
+        p2 = p2 * 1000;
     }
-    if(u1s==="cm"){
-        p1 = p1*100;
+    if (u1s === "cm") {
+        p1 = p1 / 100;
     }
-    if(u2s==="cm"){
-        p2 = p2*100;
+    if (u2s === "cm") {
+        p2 = p2 / 100;
     }
 
     //cálculo
@@ -72,9 +72,9 @@ function calculoEncuentro() {
     distancia = p1 + v1 * Number(tiempo);
 
     // resultados en pantalla
-    document.getElementById("resul_tiempo").value = tiempo + "  s";
-    document.getElementById("resul_distancia").value = distancia + "  m";
+    document.getElementById("resul_tiempo").value = tiempo + " s";
+    document.getElementById("resul_distancia").value = distancia + " m";
 
-    console.log(v1, u1,p1,u1s,v2,u2,p2,u2s);
+    console.log(v1, u1, p1, u1s, v2, u2, p2, u2s);
 
 }
