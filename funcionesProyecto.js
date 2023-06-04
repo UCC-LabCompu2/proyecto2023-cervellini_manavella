@@ -87,7 +87,7 @@ function animarAuto() {
     var ctx = canvas.getContext("2d");
 
     var img = new Image();
-    img.src = "imagenes/autocanvas.png";
+    img.src = "imagenes/autocanvas.png" ;
 
     canvas.width = canvas.width;
 
