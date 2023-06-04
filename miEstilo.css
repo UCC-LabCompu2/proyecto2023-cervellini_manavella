@@ -103,10 +103,9 @@ form {
     float: left;
 }
 
-
 .car {
-    width: 500px;
-    height: 300px;
+    width: 800px;
+    height: 600px;
     border:1px solid #eacfe4;
     background: rgb(183, 245, 192);
 }

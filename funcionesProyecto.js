@@ -87,12 +87,12 @@ function animarAuto() {
     var ctx = canvas.getContext("2d");
 
     var img = new Image();
-    img.src = "imagenes/autocanvas.png" ;
+    img.src = "imagenes/intento.png" ;
 
     canvas.width = canvas.width;
 
     img.onload = function () {
-        ctx.drawImage(img, x, 100);
+        ctx.drawImage(img, x, -200);
     }
 
     if(x>canvas.width) {
