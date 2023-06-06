@@ -64,20 +64,20 @@ Link al sitio: [Proyecto grupal Física Encuentro](https://github.com/UCC-LabCom
 ## Requisitos del Segundo Parcial
 
 ### Sobre el proyecto general
-- [ ] Todas las correcciones y mejoras solicitadas durante el primer parcial deben estar corregidas.
-- [ ] No debe haber errores presentes en el código (realizar Code > Inspect Code para verificar que no haya errores)
-- [ ] No debe haber errores JavaScripts presentes. (ver con F12 si hay errores)
+- [X] Todas las correcciones y mejoras solicitadas durante el primer parcial deben estar corregidas.
+- [X] No debe haber errores presentes en el código (realizar Code > Inspect Code para verificar que no haya errores)
+- [X] No debe haber errores JavaScripts presentes. (ver con F12 si hay errores)
 
 ### Sobre la funcionalidad JavaScript
 Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
 - [X] Una función que compruebe si los valores ingresados son correctos, y si no lo son, que le indique al usuario por un alert, y que blanquee el contenido del campo.
 - [X] Una función que calcule algo en base a los valores ingresados por el usuario en los inputs.
-- [ ] Una función que realice un dibujo sobre un canvas (debe ser representativo y acorde a los valores ingreados).
+- [X] Una función que realice un dibujo sobre un canvas (debe ser representativo y acorde a los valores ingreados).
 - [X] El código Js debe estar en un archivo externo
 - [X] Se debe emplear var, let o const según corresponda para mayor eficiencia
 
 ### Sobre la documentación
-- [ ] TODAS las funciones javaScript deben estar comentadas adecuadamente. [JsDoc](https://jsdoc.app/about-getting-started.html)
+- [X] TODAS las funciones javaScript deben estar comentadas adecuadamente. [JsDoc](https://jsdoc.app/about-getting-started.html)
    ```/**
      * Descripción de que hace la función
      * @method Nombre de la función

@@ -3,6 +3,8 @@
  * @method calculoEncuentro
  * @return
  */
+
+// función sobre resolución del ejercicio
 function calculoEncuentro() {
     let v1 = document.lasUnidades.input_velocidad1.value;
     let u1 = document.lasUnidades.input_unidad1.value;
@@ -13,7 +15,7 @@ function calculoEncuentro() {
     let p2 = document.lasUnidades.input_posicion2.value;
     let u2s = document.lasUnidades.input_uniseg.value;
 
-    //Cambiar la coma
+    //Cambiar la coma por el punto
     if (v1.includes(",")) {
         v1 = v1.replace(",", ".");
     }
@@ -45,7 +47,7 @@ function calculoEncuentro() {
         document.lasUnidades.input_posicion2.value = "";
     }
 
-    //Conversion de unidades
+    //Conversión de unidades
     if (u1 === "kmh") {
         v1 = v1 / 3.6;
     }
@@ -65,7 +67,7 @@ function calculoEncuentro() {
         p2 = p2 / 100;
     }
 
-    //cálculo
+    // cálculo
     var tiempo;
     tiempo = (p1 - p2) / (v2 - v1);
     tiempo = tiempo * 3600;
@@ -79,26 +81,40 @@ function calculoEncuentro() {
 
 }
 
-x = 0;
-dx = 2;
-
-function animarAuto() {
+function dibujarAuto() {
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
 
-    var img = new Image();
-    img.src = "imagenes/intento.png" ;
+    const img = new Image();
+    img.src = "imagenes/canvasauto.png";
 
     canvas.width = canvas.width;
 
     img.onload = function () {
-        ctx.drawImage(img, x, -200);
+        ctx.drawImage(img, x, 200);
     }
 
-    if(x>canvas.width) {
-        x = 0;
+}
+
+// variables globales
+x=0;
+dx=2;
+// función para animar auto
+function animarAuto() {
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    const img = new Image();
+    img.src = "imagenes/canvasauto.png";
+
+    canvas.width = canvas.width;
+
+    console.log("se llamo animar auto")
+    img.onload = function () {
+        ctx.drawImage(img, 100, 200);
     }
-    x+=dx;
+
+    x=x+dx;
 }
 
 

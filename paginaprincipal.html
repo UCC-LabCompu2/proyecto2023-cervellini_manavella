@@ -11,7 +11,7 @@
     <script type="text/javascript" src="funcionesProyecto.js"></script>
 </head>
 
-<body>
+<body onload="setInterval(animarAuto, 10)">
 
 <section>
     <div class="cuadrado">
@@ -68,7 +68,7 @@
     </p>
 
     <nav>
-        <button type="button" onclick="calculoEncuentro();animarAuto()" class="do_button" id="botoncalcular">C A L C U L A R</button>
+        <button type="button" onclick="calculoEncuentro()" class="do_button" id="botoncalcular">C A L C U L A R</button>
     </nav>
 </form>
 
@@ -98,7 +98,7 @@
     <a href="index.html" class="return_button" type="submit">A T R Á S</a>
 </nav>
 
-<canvas id="myCanvas" class="car">
+<canvas id="myCanvas" class="car" width="600" height="400">
 </canvas>
 
 <footer>
