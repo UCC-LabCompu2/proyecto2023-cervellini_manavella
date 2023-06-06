@@ -97,8 +97,9 @@ function dibujarAuto() {
 }
 
 // variables globales
-x=0;
-dx=2;
+var x= 0;
+var dx= 2;
+
 // función para animar auto
 function animarAuto() {
     var canvas = document.getElementById("myCanvas");
@@ -111,7 +112,7 @@ function animarAuto() {
 
     console.log("se llamo animar auto")
     img.onload = function () {
-        ctx.drawImage(img, 100, 200);
+        ctx.drawImage(img, x, 200);
     }
 
     x=x+dx;
