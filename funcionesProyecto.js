@@ -3,7 +3,6 @@
  * @method calculoEncuentro
  * @return
  */
-
 // función sobre resolución del ejercicio
 function calculoEncuentro() {
     let v1 = document.lasUnidades.input_velocidad1.value;
@@ -81,41 +80,66 @@ function calculoEncuentro() {
 
 }
 
+/**
+ * Dibujo de auto para mostrar en canvas al momento de encuentro .
+ * @method dibujarAuto
+ * @return
+ */
 function dibujarAuto() {
-    var canvas = document.getElementById("myCanvas");
-    var ctx = canvas.getContext("2d");
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
 
-    const img = new Image();
-    img.src = "imagenes/canvasauto.png";
+    const img1 = new Image();
+    img1.src = "imagenes/canvasauto.png";
+
+    img1.onload = function () {
+        ctx.drawImage(img1, x, 150);
+    }
 
     canvas.width = canvas.width;
 
-    img.onload = function () {
-        ctx.drawImage(img, x, 200);
+    const img2 = new Image();
+    img2.src = "imagenes/canvasauto.png";
+
+    img2.onload = function () {
+        ctx.drawImage(img2, x, 250);
     }
 
 }
 
 // variables globales
-var x= 0;
-var dx= 2;
+var x = 0;
+var dx = 2;
 
+/**
+ * Animación de auto en canvas al momento de encuentro .
+ * @method animarAuto
+ * @return
+ */
 // función para animar auto
 function animarAuto() {
-    var canvas = document.getElementById("myCanvas");
-    var ctx = canvas.getContext("2d");
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
 
-    const img = new Image();
-    img.src = "imagenes/canvasauto.png";
+    const img1 = new Image();
+    img1.src = "imagenes/canvasauto.png";
+
+    img1.onload = function () {
+        ctx.drawImage(img1, x, 150);
+    }
 
     canvas.width = canvas.width;
 
-    console.log("se llamo animar auto")
-    img.onload = function () {
-        ctx.drawImage(img, x, 200);
+    console.log("se llamo animar auto");
+
+    const img2 = new Image();
+    img2.src = "imagenes/autoencuentro.png";
+
+    img2.onload = function () {
+        ctx.drawImage(img2, x, 250);
     }
 
-    x=x+dx;
+    x = x + dx;
 }
 
 
