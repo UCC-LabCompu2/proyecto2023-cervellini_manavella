@@ -83,6 +83,8 @@ function calculoEncuentro() {
 //variables globales
 var x = 0;
 var dx = 2;
+var h = 450;
+var dh = 2 ;
 var intervalId = null; // Variable para almacenar el identificador del intervalo
 
 /**
@@ -107,13 +109,14 @@ function animarAuto() {
     console.log("se llamo animar auto");
 
     const img2 = new Image();
-    img2.src = "imagenes/autoencuentro.png";
+    img2.src = "imagenes/enfrentado.png";
 
     img2.onload = function () {
-        ctx.drawImage(img2, x, 250);
+        ctx.drawImage(img2, h, 170);
     }
 
     x = x + dx;
+    h = h - dh ;
 }
 
 // Manejar el evento del botón fuera de la función animarAuto()
