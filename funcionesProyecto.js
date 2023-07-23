@@ -80,36 +80,10 @@ function calculoEncuentro() {
 
 }
 
-/**
- * Dibujo de auto para mostrar en canvas al momento de encuentro .
- * @method dibujarAuto
- * @return
- */
-function dibujarAuto() {
-    const canvas = document.getElementById("myCanvas");
-    const ctx = canvas.getContext("2d");
-
-    const img1 = new Image();
-    img1.src = "imagenes/canvasauto.png";
-
-    img1.onload = function () {
-        ctx.drawImage(img1, x, 150);
-    }
-
-    canvas.width = canvas.width;
-
-    const img2 = new Image();
-    img2.src = "imagenes/canvasauto.png";
-
-    img2.onload = function () {
-        ctx.drawImage(img2, x, 250);
-    }
-
-}
-
-// variables globales
+//variables globales
 var x = 0;
 var dx = 2;
+var intervalId = null; // Variable para almacenar el identificador del intervalo
 
 /**
  * Animación de auto en canvas al momento de encuentro .
@@ -142,6 +116,16 @@ function animarAuto() {
     x = x + dx;
 }
 
+// Manejar el evento del botón fuera de la función animarAuto()
+const startAnimationBtn = document.getElementById("startAnimationBtn");
+startAnimationBtn.addEventListener("click", function () {
+    if (!intervalId) {
+        intervalId = setInterval(animarAuto, 50);
+    }
+});
 
-
-
+// Detener la animación cuando sea necesario
+function detenerAnimacion() {
+    clearInterval(intervalId);
+    intervalId = null;
+}

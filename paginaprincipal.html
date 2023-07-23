@@ -11,7 +11,7 @@
     <script type="text/javascript" src="funcionesProyecto.js"></script>
 </head>
 
-<body onload="setInterval(animarAuto, 10)">
+<body>
 
 <section>
     <div class="cuadrado">
@@ -23,18 +23,18 @@
 
     <p class="velocidad_11">
         <label for="input_velocidad1">Velocidad:</label>
-        <input type="text" class="form-control" id="input_velocidad1" aria-describedby="velocidad"
+        <input type="text" class="form-control" id="input_velocidad1" maxlength="4" aria-describedby="velocidad"
                placeholder="Ingrese la velocidad">
-        <label class="my-1 mr-2" for="input_unidad1"></label>
         <select class="form-control" id="input_unidad1">
             <option value="kmh">km/h</option>
             <option value="ms">m/s</option>
         </select>
     </p>
 
+
     <p class="posicion_11">
         <label for="input_posicion1">Posición:</label>
-        <input type="text" class="form-control" id="input_posicion1" aria-describedby="posición"
+        <input type="text" class="form-control" id="input_posicion1" maxlength="4" aria-describedby="posición"
                placeholder="Ingrese la posición">
         <select class="form-control" id="input_unipri">
             <option value="km">km</option>
@@ -46,7 +46,7 @@
 
     <p class="velocidad_22">
         <label for="input_velocidad2">Velocidad:</label>
-        <input type="text" class="form-control" id="input_velocidad2" aria-describedby="velocidad"
+        <input type="text" class="form-control" id="input_velocidad2" maxlength="4" aria-describedby="velocidad"
                placeholder="Ingrese la velocidad">
         <select class="form-control" id="input_unidadseg">
             <option value="kmh">km/h</option>
@@ -57,7 +57,7 @@
 
     <p class="posicion_22">
         <label for="input_posicion2">Posición:</label>
-        <input type="text" class="form-control" id="input_posicion2" aria-describedby="posición"
+        <input type="text" class="form-control" id="input_posicion2" maxlength="4" aria-describedby="posición"
                placeholder="Ingrese la posición">
         <select class="form-control" id="input_uniseg">
             <option value="km">km</option>
@@ -80,7 +80,7 @@
 <section>
     <div class="tiempo">
         Tiempo al momento del encuentro
-        <input type="text" id="resul_tiempo" aria-describedby="resultado" onchange="calculoEncuentro();" disabled>
+        <input type="text" id="resul_tiempo" aria-describedby="resultado" disabled>
         <label for="resul_tiempo"></label>
     </div>
 </section>
@@ -88,7 +88,7 @@
 <section>
     <div class="distancia">
         Distancia al momento del encuentro
-        <input type="text" id="resul_distancia" aria-describedby="resultado" onchange="calculoEncuentro();" disabled>
+        <input type="text" id="resul_distancia" aria-describedby="resultado" disabled>
         <label for="resul_distancia"></label>
     </div>
 </section>
@@ -97,7 +97,10 @@
     <a href="index.html" class="return_button" type="submit">A T R Á S</a>
 </nav>
 
-<canvas id="myCanvas" class="car" width="600" height="400">
+<button type="button" onclick="setInterval(animarAuto, 50)" class="car">VER ANIMACION</button>
+
+
+<canvas id="myCanvas" class="movimiento" width="600" height="400">
 </canvas>
 
 <footer>

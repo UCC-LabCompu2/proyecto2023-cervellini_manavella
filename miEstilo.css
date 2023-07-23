@@ -102,7 +102,22 @@ form {
     float: left;
 }
 
+.movimiento{
+    display: inline-block;
+    background-color: #a5ecae;
+    border: none;
+    margin: 10px ;
+    text-align: center;
+}
+
 .car {
-    border: 1px solid #eacfe4;
-    background: rgb(183, 245, 192);
+    background-color: rgb(66, 94, 70);
+    padding: 15px 30px;
+    border: none;
+    margin: 10px ;
+    position: static;
+    text-align: center;
+    font-family: "Cambria Math";
+    color: #e7dfdf;
+    float: initial;
 }
