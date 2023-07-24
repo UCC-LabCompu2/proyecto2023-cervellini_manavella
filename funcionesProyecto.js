@@ -73,18 +73,28 @@ function calculoEncuentro() {
     distancia = p1 + v1 * Number(tiempo);
 
     // resultados en pantalla
-    document.getElementById("resul_tiempo").value = tiempo + " s";
-    document.getElementById("resul_distancia").value = distancia + " m";
+    if (tiempo = isNaN()) {
+        document.getElementById("resul_tiempo").value = "E R R O R";
+    }
+    if(distancia = isNaN()){
+        document.getElementById("resul_distancia").value = "E R R O R";
+    }
+    if(tiempo!=isNaN()){
+        document.getElementById("resul_tiempo").value = tiempo + " s";
+    }
+    if(distancia!=isNaN()){
+        document.getElementById("resul_distancia").value = distancia + " m";
+    }
 
     console.log(v1, u1, p1, u1s, v2, u2, p2, u2s);
-
 }
 
 //variables globales
 var x = 0;
 var dx = 2;
 var h = 450;
-var dh = 2 ;
+var dh = 2;
+
 // var intervalId = null; // Variable para almacenar el identificador del intervalo
 
 /**
@@ -115,23 +125,13 @@ function animarAuto() {
         ctx.drawImage(img2, h, 170);
     }
 
-    x = x + dx;
-    h = h - dh ;
-}
+    var padding = 9;
 
-
-/**
-// Manejar el evento del botón fuera de la función animarAuto()
-const startAnimationBtn = document.getElementById("startAnimationBtn");
-startAnimationBtn.addEventListener("click", function () {
-    if (!intervalId) {
-        intervalId = setInterval(animarAuto, 50);
+    if (x > 450 && h <= 0) {
+        x = 0;
+        h = 450;
     }
-});
 
-// Detener la animación cuando sea necesario
-function detenerAnimacion() {
-    clearInterval(intervalId);
-    intervalId = null;
+    x = x + dx;
+    h = h - dh;
 }
-*/
