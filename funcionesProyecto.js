@@ -85,7 +85,7 @@ var x = 0;
 var dx = 2;
 var h = 450;
 var dh = 2 ;
-var intervalId = null; // Variable para almacenar el identificador del intervalo
+// var intervalId = null; // Variable para almacenar el identificador del intervalo
 
 /**
  * Animación de auto en canvas al momento de encuentro .
@@ -119,6 +119,8 @@ function animarAuto() {
     h = h - dh ;
 }
 
+
+/**
 // Manejar el evento del botón fuera de la función animarAuto()
 const startAnimationBtn = document.getElementById("startAnimationBtn");
 startAnimationBtn.addEventListener("click", function () {
@@ -132,3 +134,4 @@ function detenerAnimacion() {
     clearInterval(intervalId);
     intervalId = null;
 }
+*/
