@@ -73,17 +73,12 @@ function calculoEncuentro() {
     distancia = p1 + v1 * Number(tiempo);
 
     // resultados en pantalla
-    if (tiempo = isNaN()) {
-        document.getElementById("resul_tiempo").value = "E R R O R";
-    }
-    if(distancia = isNaN()){
-        document.getElementById("resul_distancia").value = "E R R O R";
-    }
-    if(tiempo!=isNaN()){
+    if (!isNaN(tiempo) || !isNaN(distancia)) {
         document.getElementById("resul_tiempo").value = tiempo + " s";
-    }
-    if(distancia!=isNaN()){
         document.getElementById("resul_distancia").value = distancia + " m";
+    } else {
+        document.getElementById("resul_tiempo").value = "E R R O R";
+        document.getElementById("resul_distancia").value = "E R R O R";
     }
 
     console.log(v1, u1, p1, u1s, v2, u2, p2, u2s);

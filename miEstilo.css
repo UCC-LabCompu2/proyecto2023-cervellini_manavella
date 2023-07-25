@@ -102,11 +102,11 @@ form {
     float: left;
 }
 
-.movimiento{
+.movimiento {
     display: inline-block;
     background-color: #a5ecae;
     border: none;
-    margin: 10px ;
+    margin: 10px;
     text-align: center;
 }
 
@@ -114,7 +114,7 @@ form {
     background-color: rgb(66, 94, 70);
     padding: 15px 30px;
     border: none;
-    margin: 10px ;
+    margin: 10px;
     text-align: center;
     font-family: "Cambria Math";
     color: #e7dfdf;
