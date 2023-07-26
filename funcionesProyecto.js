@@ -120,8 +120,6 @@ function animarAuto() {
         ctx.drawImage(img2, h, 170);
     }
 
-    var padding = 9;
-
     if (x > 450 && h <= 0) {
         x = 0;
         h = 450;
